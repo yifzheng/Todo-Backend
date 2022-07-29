@@ -21,7 +21,7 @@ const db = require("./app/models");
 
 //sync to database
 db.sequelize
-	.sync({ alter: true })
+	.sync()
 	.then(() => {
 		console.log("Synced with Database");
 	})
