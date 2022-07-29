@@ -6,7 +6,7 @@ const sequelize = new Sequelize(
 	process.env.DATABASE_URL,
 	{
 		//host: process.env.DB_HOST,
-		dialect: process.env.DB_DIALECT,
+		dialect: 'postgres',
 		operatorsAliases: false,
 		pool: {
 			max: 5,
