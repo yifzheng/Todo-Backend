@@ -38,5 +38,5 @@ app.get("/", (req, res) => {
 require("./app/routes/todo.routes.js")(app);
 
 app.listen(PORT, () => {
-	console.log(`Server is running on port ${port}`);
+	console.log(`Server is running on port ${PORT}`);
 });
