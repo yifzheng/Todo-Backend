@@ -1,3 +1,4 @@
+const { reset } = require("nodemon");
 const db = require("../models");
 const Todo = db.todos;
 
@@ -35,6 +36,7 @@ exports.create = (req, res) => {
 exports.findAll = (req, res) => {
 	Todo.findAll()
 		.then((data) => {
+			console.log("the data", data);
 			res.send(data);
 		})
 		.catch((err) => {
