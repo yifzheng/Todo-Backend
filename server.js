@@ -2,7 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const app = express();
 require("dotenv").config();
-const port = process.env.PORT || 8080;
+const PORT = process.env.PORT || 8080;
 
 /* let corsOptions = {
 	origin: "http://localhost:8081",
@@ -37,6 +37,6 @@ app.get("/", (req, res) => {
 // routes of the api
 require("./app/routes/todo.routes.js")(app);
 
-app.listen(port, () => {
+app.listen(PORT, () => {
 	console.log(`Server is running on port ${port}`);
 });
